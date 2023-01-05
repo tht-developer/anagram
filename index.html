@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anagram Project</title>
+</head>
+<body>
+    <div id="fullBody">
+<!--Header / Title section-->    
+    <div class="h1Section">
+    <h1>Anagram Project</h1>
+    <p class="description">This is a small project that was assigned to me for a learning exercise!</p>
+    <div>
+        <div id="resetDiv">
+            <input type="reset" id="resetButton" value="RESET FORM" />
+        </div>
+    </div>
+    </div>
+
+<!--Beginning of WORD entry section-->
+<div class="wordSection">
+<label for='wordEntry'>Enter one word here:</label>
+
+    <input type="text" id="wordEntry" name="wordEntry">
+   
+<!--WORD Button-->
+    <div class="wordScrambleButton">
+        <button id="wordButton">
+            Scramble my WORD!
+        </button>
+    </div>
+
+<!--Word ANSWER section-->
+<div class="wordAnswer">
+<p class="answerIntro">Here is your WORD anagramed!</p>
+<div class="wordAnswerBox">
+    
+    <p id="scrambledWord"></p>
+       
+</div>
+</div>
+</div>
+
+<!--Beginning of SENTENCE entry section-->
+<div class="sentenceSection">
+<label for='sentenceEntry'>Enter a full sentence here:</label>
+    
+    <input type="text" id="sentenceEntry" name="sentenceEntry" for="sentenceEntry">
+
+<!--SENTENCE Button-->    
+    <div class="sentenceScrambleButton">
+        <button id="sentenceButton" type='button'>
+        <span>Scramble my SENTENCE!</span>
+        </button>
+    </div>
+
+<!--Sentence ANSWER section-->
+<div class="sentenceAnswer">
+<p class="answerIntro">Here is your SENTENCE anagramed!</p>
+<div class="answer">
+
+    
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/main.js"></script>
+</body>
+</html>

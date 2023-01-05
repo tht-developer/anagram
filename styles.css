@@ -1,0 +1,217 @@
+body {
+    width: 100%;
+    height: 900px;
+    background-color: white;
+}
+
+#fullBody {
+    display: flex;
+    background-color: grey;
+    flex-direction: column;
+    max-width: 900px;
+    height: 760px;
+    justify-content: flex-start;
+    
+}
+
+.h1Section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    opacity: 100%;
+    background-image: linear-gradient(to right, rgb(27, 27, 99) 40%, grey 97%, grey 100%);
+    max-width: 900px;
+    height: 200px;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 10px;
+    padding-left: 26px;
+    padding-top: 10px;
+    
+    
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 22px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    
+   
+
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+}
+
+#wordEntry {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    height: 28px;
+    border-color: rgb(212, 231, 9);
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 15px;
+}
+
+#sentenceEntry {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    height: 28px;
+    border-color: rgb(212, 231, 9);
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 15px;
+}
+
+.sentenceSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    height: auto;
+}
+
+.wordSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    height: auto;
+}
+
+.wordAnswer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    height: auto;
+}
+
+.sentenceAnswer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    height: auto;
+}
+
+.answerIntro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 900px;
+    height: 20px;
+    color: rgb(27, 27, 99);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#wordButton, #sentenceButton {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    word-wrap: break-word;
+    margin: 20px;
+    padding: 10px;
+    color: rgb(42, 42, 177);
+    font-weight: bold;
+    width: 120px;
+    border-radius: 10px;
+}
+
+#wordButton:hover {
+    background-color: rgb(27, 27, 99);
+    color: white;
+}
+
+#sentenceButton:hover {
+    background-color: rgb(27, 27, 99);
+    color: white;
+}
+
+#resetDiv {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: center;
+}
+
+
+#resetButton {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    word-wrap: break-word;
+    margin: 20px;
+    padding: 10px;
+    background-color: black;
+    color: yellow;
+    font-weight: bold;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+}
+
+#resetButton:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.answer, .wordAnswerBox {
+    background-color: rgb(150, 128, 128);
+    width: 500px;
+    height: 30px;
+    text-align: center;
+    
+}
