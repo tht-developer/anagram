@@ -15,14 +15,15 @@
     <p class="description">This is a small project that was assigned to me for a learning exercise!</p>
     <div>
         <div id="resetDiv">
-            <input type="reset" id="resetButton" value="RESET FORM" />
+            <button id="resetButton">RESET</button>
+        
         </div>
     </div>
     </div>
 
 <!--Beginning of WORD entry section-->
 <div class="wordSection">
-<label for='wordEntry'>Enter one word here:</label>
+<label for='wordEntry'>Enter ONE word here:</label>
 
     <input type="text" id="wordEntry" name="wordEntry">
    
@@ -38,7 +39,7 @@
 <p class="answerIntro">Here is your WORD anagramed!</p>
 <div class="wordAnswerBox">
     
-    <p id="scrambledWord"></p>
+    <p id="scrambledWordDisplay"></p>
        
 </div>
 </div>
@@ -60,8 +61,9 @@
 <!--Sentence ANSWER section-->
 <div class="sentenceAnswer">
 <p class="answerIntro">Here is your SENTENCE anagramed!</p>
-<div class="answer">
-
+<div class="sentenceAnswerBox">
+  
+    <p id="scrambledSentenceDisplay"></p>
     
 </div>
 </div>

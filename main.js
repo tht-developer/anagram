@@ -1,13 +1,18 @@
+let wordEntry = document.getElementById('wordEntry');
+let wordButton = document.getElementById('wordButton');
+let scrambledWordDisplay = document.getElementById('scrambledWordDisplay');
 
+let sentenceEntry = document.getElementById('sentenceEntry');
+let sentenceButton = document.getElementById('sentenceButton');
+let scrambledSentenceDisplay = document.getElementById('scrambledSentenceDisplay');
 
+wordButton.addEventListener('click',  () => {
+  scrambledWordDisplay.innerText = initialWord(wordEntry.value)
+});
 
-//const string = document.querySelector('#wordEntry').value;
-//const longerString = document.getElementById('sentenceEntry').value;
-
-let words = document.getElementById('#wordEntry');
-let sentence = document.getElementById('#sentenceEntry');
-
-wordButton.addEventListener("click", initialWord(words));
+sentenceButton.addEventListener('click',  () => {
+  scrambledSentenceDisplay.innerText = doSentence(sentenceEntry.value)
+});
 
 function initialWord(words) {
    let anagramedWord = '';
@@ -16,16 +21,7 @@ function initialWord(words) {
     anagramedWord += words.splice(words.length * Math.random() << 0, 1);
   }
   return anagramedWord;
-  
 }
-
-
-
-
-//console.log(initialWord(string));
-
-
-sentenceButton.addEventListener("click", doSentence(sentence));
 
 function doSentence(sentence) {
   let words = sentence.split(' ')
@@ -34,13 +30,14 @@ function doSentence(sentence) {
     anagramedWords.push(initialWord(words))
   })
    return anagramedWords.join(' ')
+  }
 
-   }
+//simple way (cheat lol) to "clear contents" on a page like this
+let resetButton = document.getElementById('resetButton');
 
-
-//console.log(sentence);  
-//console.log(doSentence(sentence));
-
+resetButton.addEventListener('click', () => {
+ location.reload();
+});
 
 
 /* COPY OF WORKING CODE JUST IN CASE - DO NOT ALTER!
@@ -54,7 +51,6 @@ let sentence = longerString;
 
 console.log(words);
 
-
 function initialWord(words) {
   let anagramedWord = '';
    words = words.split('');    
@@ -63,9 +59,7 @@ function initialWord(words) {
   }
   return anagramedWord;
 }
-
 console.log(initialWord(words));
-
 
 function doSentence(sentence) {
   let words = sentence.split(' ')
