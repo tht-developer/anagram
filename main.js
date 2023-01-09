@@ -7,11 +7,11 @@ let sentenceButton = document.getElementById('sentenceButton');
 let scrambledSentenceDisplay = document.getElementById('scrambledSentenceDisplay');
 
 wordButton.addEventListener('click',  () => {
-  scrambledWordDisplay.innerText = initialWord(wordEntry.value)
+  scrambledWordDisplay.innerText = initialWord(wordEntry.value.toLowerCase())
 });
 
 sentenceButton.addEventListener('click',  () => {
-  scrambledSentenceDisplay.innerText = doSentence(sentenceEntry.value)
+  scrambledSentenceDisplay.innerText = doSentence(sentenceEntry.value.toLowerCase())
 });
 
 function initialWord(words) {
@@ -39,6 +39,12 @@ resetButton.addEventListener('click', () => {
  location.reload();
 });
 
+
+/*
+resetButton.addEventListener('click', () => {
+  wordEntry = '';
+  sentenceEntry = '';
+ });
 
 /* COPY OF WORKING CODE JUST IN CASE - DO NOT ALTER!
 
