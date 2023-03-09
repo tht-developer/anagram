@@ -9,9 +9,26 @@ body {
     background-color: grey;
     flex-direction: column;
     max-width: 900px;
-    height: 760px;
+    height: fit-content;
     justify-content: flex-start;
     
+}
+
+.learnedBox {
+    max-width: 900px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(150, 179, 180);
+    margin-bottom: 1rem;
+}
+
+.learned {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0 20px;
+    margin: 20px 0;
 }
 
 .h1Section {
@@ -102,7 +119,7 @@ label {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 0;
     height: auto;
 }
 
@@ -112,7 +129,7 @@ label {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 0;
     height: auto;
 }
 
@@ -122,7 +139,7 @@ label {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    padding: 0 0 2rem 0;
     height: auto;
 }
 
@@ -172,6 +189,7 @@ label {
     font-size: 32px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
 }
 
 #resetDiv {
